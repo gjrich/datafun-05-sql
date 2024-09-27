@@ -53,3 +53,74 @@
 2024-09-26 22:30:55,251 - INFO - Running query_filter.sql
 2024-09-26 22:30:55,252 - INFO - Running query_sorting.sql
 2024-09-26 22:30:55,253 - INFO - Running query_group_by.sql
+2024-09-26 22:37:16,221 - INFO - Program started
+2024-09-26 22:37:16,232 - INFO - Running insert_records.sql
+2024-09-26 22:37:16,238 - INFO - Running update_records.sql
+2024-09-26 22:37:16,241 - INFO - Running delete_records.sql
+2024-09-26 22:37:16,243 - INFO - Running query_aggregation.sql
+2024-09-26 22:37:16,244 - INFO - Running query_filter.sql
+2024-09-26 22:37:16,245 - INFO - Running query_sorting.sql
+2024-09-26 22:37:16,246 - INFO - Running query_group_by.sql
+2024-09-26 22:37:16,246 - INFO - Running query_join.sql
+2024-09-26 22:37:16,246 - INFO - All SQL operations completed successfully
+2024-09-26 22:37:16,246 - INFO - Program ended
+2024-09-26 22:44:33,792 - INFO - Program started
+2024-09-26 22:44:33,808 - INFO - Running create_tables.sql
+2024-09-26 22:44:33,814 - INFO - Running insert_records.sql
+2024-09-26 22:44:33,815 - INFO - Running update_records.sql
+2024-09-26 22:44:33,815 - INFO - Running delete_records.sql
+2024-09-26 22:44:33,816 - INFO - Running query_aggregation.sql
+2024-09-26 22:44:33,816 - INFO - Running query_filter.sql
+2024-09-26 22:44:33,818 - INFO - Running query_sorting.sql
+2024-09-26 22:44:33,818 - INFO - Running query_group_by.sql
+2024-09-26 22:44:33,819 - INFO - Running query_join.sql
+2024-09-26 22:44:33,819 - INFO - All SQL operations completed successfully
+2024-09-26 22:44:33,819 - INFO - Program ended
+2024-09-26 22:54:42,894 - INFO - Program started
+2024-09-26 22:54:42,910 - DEBUG - Running create_tables.sql
+2024-09-26 22:54:42,917 - DEBUG - Running insert_records.sql
+2024-09-26 22:54:42,918 - DEBUG - Running update_records.sql
+2024-09-26 22:54:42,918 - DEBUG - Running delete_records.sql
+2024-09-26 22:54:42,919 - DEBUG - Running query_aggregation.sql
+2024-09-26 22:54:42,920 - DEBUG - Running query_filter.sql
+2024-09-26 22:54:42,921 - DEBUG - Running query_sorting.sql
+2024-09-26 22:54:42,922 - DEBUG - Running query_group_by.sql
+2024-09-26 22:54:42,922 - DEBUG - Running query_join.sql
+2024-09-26 22:54:42,922 - INFO - All SQL operations completed successfully
+2024-09-26 22:54:42,922 - INFO - Program ended
+2024-09-26 22:54:50,294 - INFO - Program started
+2024-09-26 22:54:50,312 - DEBUG - Running create_tables.sql
+2024-09-26 22:54:50,318 - DEBUG - Running insert_records.sql
+2024-09-26 22:54:50,319 - DEBUG - Running update_records.sql
+2024-09-26 22:54:50,319 - DEBUG - Running delete_records.sql
+2024-09-26 22:54:50,320 - DEBUG - Running query_aggregation.sql
+2024-09-26 22:54:50,321 - DEBUG - Running query_filter.sql
+2024-09-26 22:54:50,322 - DEBUG - Running query_sorting.sql
+2024-09-26 22:54:50,322 - DEBUG - Running query_group_by.sql
+2024-09-26 22:54:50,323 - DEBUG - Running query_join.sql
+2024-09-26 22:54:50,324 - INFO - All SQL operations completed successfully
+2024-09-26 22:54:50,324 - INFO - Program ended
+2024-09-26 22:56:34,009 - INFO - Program started
+2024-09-26 22:56:34,027 - DEBUG - Running create_tables.sql
+2024-09-26 22:56:34,033 - DEBUG - Running insert_records.sql
+2024-09-26 22:56:34,034 - DEBUG - Running update_records.sql
+2024-09-26 22:56:34,034 - DEBUG - Running delete_records.sql
+2024-09-26 22:56:34,035 - DEBUG - Running query_aggregation.sql
+2024-09-26 22:56:34,036 - DEBUG - Running query_filter.sql
+2024-09-26 22:56:34,037 - DEBUG - Running query_sorting.sql
+2024-09-26 22:56:34,037 - DEBUG - Running query_group_by.sql
+2024-09-26 22:56:34,038 - DEBUG - Running query_join.sql
+2024-09-26 22:56:34,038 - INFO - All SQL operations completed successfully
+2024-09-26 22:56:34,038 - INFO - Program ended
+2024-09-26 23:16:11,822 - INFO - Program started
+2024-09-26 23:16:11,837 - DEBUG - Running create_tables.sql
+2024-09-26 23:16:11,843 - DEBUG - Running insert_records.sql
+2024-09-26 23:16:11,844 - DEBUG - Running update_records.sql
+2024-09-26 23:16:11,845 - DEBUG - Running delete_records.sql
+2024-09-26 23:16:11,845 - DEBUG - Running query_aggregation.sql
+2024-09-26 23:16:11,846 - DEBUG - Running query_filter.sql
+2024-09-26 23:16:11,847 - DEBUG - Running query_sorting.sql
+2024-09-26 23:16:11,847 - DEBUG - Running query_group_by.sql
+2024-09-26 23:16:11,849 - DEBUG - Running query_join.sql
+2024-09-26 23:16:11,849 - INFO - All SQL operations completed successfully
+2024-09-26 23:16:11,849 - INFO - Program ended

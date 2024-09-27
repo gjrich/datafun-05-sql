@@ -34,7 +34,7 @@ Use Python to interact with the SQL database and execute SQL commands.
 # could include in function name but that looks gross
 # it also is easily duplicated if we add additional .sql files in the future
 
-# create_tables_path=pathlib.Path("sql").joinpath("create_tables.sql")
+create_tables_path=pathlib.Path("sql").joinpath("create_tables.sql")
 insert_records_path=pathlib.Path("sql").joinpath("insert_records.sql")
 update_records_path = pathlib.Path("sql").joinpath("update_records.sql")
 delete_records_path = pathlib.Path("sql").joinpath("delete_records.sql")
@@ -47,12 +47,23 @@ query_join_path = pathlib.Path("sql").joinpath("query_join.sql")
 
 # Call the various Sql scripts from /sql/*.sql
 
-'''def py_sql_create_tables(db_filepath, create_tables_path):
-    with sqlite3.connect(db_filepath) as conn:
-        with open(create_tables_path, 'r') as file:
-            sql_script = file.read()
-        conn.executescript(sql_script)
-        print(f"Executed SQL from {create_tables_path}")'''
+def py_sql_create_tables(db_filepath, create_tables_path):
+    try:
+        with sqlite3.connect(db_filepath) as conn:
+            with open(create_tables_path, 'r') as file:
+                sql_script = file.read()
+            conn.executescript(sql_script)
+            print(f"Executed SQL from {create_tables_path}")
+    except sqlite3.OperationalError as e:
+        logging.exception("Operational error occurred while executing SQL script.")
+    except sqlite3.IntegrityError as e:
+        logging.exception("Integrity error occurred while executing SQL script.")
+    except sqlite3.ProgrammingError as e:
+        logging.exception("Programming error occurred while executing SQL script.")
+    except Exception as e:
+        logging.exception("An unexpected error occurred.")
+        
+        
 
 def py_sql_insert_records(db_filepath, insert_records_path):
     with sqlite3.connect(db_filepath) as conn:
@@ -136,32 +147,32 @@ def main():
     logging.info("Program started")
 
     # Create database schema and populate with data
-   # py_sql_create_tables(db_filepath, create_tables_path)
-    #logging.info("Running create_tables.sql")
+    py_sql_create_tables(db_filepath, create_tables_path)
+    logging.debug("Running create_tables.sql")
     
     py_sql_insert_records(db_filepath, insert_records_path)
-    logging.info("Running insert_records.sql")
+    logging.debug("Running insert_records.sql")
 
     py_sql_update_records(db_filepath, update_records_path)
-    logging.info("Running update_records.sql")
+    logging.debug("Running update_records.sql")
 
     py_sql_delete_records(db_filepath, delete_records_path)
-    logging.info("Running delete_records.sql")
+    logging.debug("Running delete_records.sql")
 
     py_sql_query_aggregation(db_filepath, query_aggregation_path)
-    logging.info("Running query_aggregation.sql")
+    logging.debug("Running query_aggregation.sql")
 
     py_sql_query_filter(db_filepath, query_filter_path)
-    logging.info("Running query_filter.sql")
+    logging.debug("Running query_filter.sql")
 
     py_sql_query_sorting(db_filepath, query_sorting_path)
-    logging.info("Running query_sorting.sql")
+    logging.debug("Running query_sorting.sql")
 
     py_sql_query_group_by(db_filepath, query_group_by_path)
-    logging.info("Running query_group_by.sql")
+    logging.debug("Running query_group_by.sql")
 
     py_sql_query_join(db_filepath, query_join_path)
-    logging.info("Running query_join.sql")
+    logging.debug("Running query_join.sql")
         
 
     logging.info("All SQL operations completed successfully")
