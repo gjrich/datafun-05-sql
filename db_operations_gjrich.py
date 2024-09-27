@@ -34,7 +34,7 @@ Use Python to interact with the SQL database and execute SQL commands.
 # could include in function name but that looks gross
 # it also is easily duplicated if we add additional .sql files in the future
 
-create_tables_path=pathlib.Path("sql").joinpath("create_tables.sql")
+# create_tables_path=pathlib.Path("sql").joinpath("create_tables.sql")
 insert_records_path=pathlib.Path("sql").joinpath("insert_records.sql")
 update_records_path = pathlib.Path("sql").joinpath("update_records.sql")
 delete_records_path = pathlib.Path("sql").joinpath("delete_records.sql")
@@ -47,19 +47,19 @@ query_join_path = pathlib.Path("sql").joinpath("query_join.sql")
 
 # Call the various Sql scripts from /sql/*.sql
 
-def py_sql_create_tables(db_filepath, create_tables_path):
+'''def py_sql_create_tables(db_filepath, create_tables_path):
     with sqlite3.connect(db_filepath) as conn:
         with open(create_tables_path, 'r') as file:
             sql_script = file.read()
         conn.executescript(sql_script)
-        print(f"Executed SQL from {create_tables_path}")
+        print(f"Executed SQL from {create_tables_path}")'''
 
-def py_sql_insert(db_filepath, insert_records_path):
+def py_sql_insert_records(db_filepath, insert_records_path):
     with sqlite3.connect(db_filepath) as conn:
         with open(insert_records_path, 'r') as file:
             sql_script = file.read()
         conn.executescript(sql_script)
-        print(f"Executed SQL from {sql_file}")
+        print(f"Executed SQL from {insert_records_path}")
 
 
 
@@ -136,8 +136,8 @@ def main():
     logging.info("Program started")
 
     # Create database schema and populate with data
-    py_sql_create_tables(db_filepath, create_tables_path)
-    logging.info("Running create_tables.sql")
+   # py_sql_create_tables(db_filepath, create_tables_path)
+    #logging.info("Running create_tables.sql")
     
     py_sql_insert_records(db_filepath, insert_records_path)
     logging.info("Running insert_records.sql")
