@@ -3,9 +3,6 @@
 # Leaving this as a separate file in case I customize furhter in the future
 # gjrich | sept 2024
 
-import sqlite3
-import pathlib
-import pandas as pd
 # Import from Python Standard Library first
 import sqlite3
 import pathlib
